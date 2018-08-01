@@ -12,6 +12,7 @@ document.getElementById("sendMessage").onclick = function() {
   } else {
     alert("Select field for search.");
   }
+  var truth = true;
   var oReq = new XMLHttpRequest();
   oReq.onload = function(e) {
     let json = JSON.parse(this.responseText);

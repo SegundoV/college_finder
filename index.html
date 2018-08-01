@@ -1,21 +1,23 @@
-<!doctype html>
+ <!doctype html>
 <style>
 div.a {
 		text-align: center;
+		
 	}
-
 	.nav-wrapper {
 		background-color: #008080
 	}
-
 	fieldset {
 		text-align: center;
 		margin: -15px;
 	}
-
 	h1 {
 		padding: 10px;
 	}
+	th {
+		border: 5px;
+	}
+
 }
 </style>
 <html>
@@ -24,10 +26,11 @@ div.a {
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="/src/materialize.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="../src/materialize.min.css" media="screen,projection" />
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<script src="/src/index.js"</script>
+	<script src="../src/index.js"</script>
+
 
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -46,9 +49,9 @@ div.a {
 	<nav>
 		<div class="nav-wrapper">
 			<form>
-				<div class="input-field">
-					<input name="search" type="search" id="textInput" required>
-					<label class="label-icon" for="search"><i  class="material-icons" onfocus="Search  By State or Name">search </i></label>
+				<div class="input-field" required>
+					<input formmethod="post" id="textInput">
+					<label class="label-icon" for="search"><i class="material-icons" onfocus="Search By State or Name">search</i></label>
 					<i class="material-icons"></i>
 				</div>
 			</form>
@@ -57,41 +60,31 @@ div.a {
 		<div>
 			<fieldset>
 				<label>
-        <input id="state" type="radio" name="y"/>
+        <input id="state" type="radio" name="selection" />
         <span>State</span>
-			</label>
+      </label>
 			<label>
-        <input id="name" type="radio" name="y" />
+        <input id="name" type="radio" name="selection"  />
         <span>Name</span>
-     </label>
-		 </fieldset>
-		 </div>
-		 
+      </label>
+			</fieldset>
+		</div>
 	</nav>
-	<a id="sendMessage" class="waves-effect waves-light btn">
+	<a id="sendMessage" class="waves-effect waves-light btn" required>
 		<i class="material-icons left">
 	<i class="material-icons left">cloud</i>search</a>
 	</div>
 	
 	<div>
-
-		<div>			
- 
-			<table bgcolor="#C0C0C0" border='2' id="tableGang">
-				
-			</table>
-			
-				
-		
+		<div>
+			<table bgcolor="#C0C0C0" border='2' id="tableGang" >
+			</tabel>
+			<script language="index.js">
+				<a href "switch data"> urlData </a>
+			</script>
 		</div>
 
-<script>
-	// Create the array and fill it with data.
-	 ///var Colors = new Array("Blue", "Green", "Purple");
-  // Display the content onscreen.
-  ///document.write(Colors);
-</script>
-</body>
 
+</body>
 
 </html>
