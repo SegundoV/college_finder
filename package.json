@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "start": "parcel build index.html && node server.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": []
+  "keywords": [
+    "sparkcollegefinder"
+  ]
 }
