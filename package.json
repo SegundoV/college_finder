@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "node server.js",
-    "build": "parcel build index.html"
+    "start": "parcel build index.html && node server.js"
   },
   "dependencies": {
     "express": "^4.16.3"
